@@ -1,1 +1,0 @@
-C:\xampp\htdocs\blog\app/views/posts/create.blade.php
