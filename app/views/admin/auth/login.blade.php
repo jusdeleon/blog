@@ -13,7 +13,7 @@
 			</li>
 			<li>
 				{{ Form::label('password', 'Password') }}
-				{{ Form::text('password') }}
+				{{ Form::password('password') }}
 				{{ $errors->first('password', '<p class="error">:message</p>') }}
 			</li>
 			<li>
