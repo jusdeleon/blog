@@ -2,6 +2,10 @@
 
 @section('content')
 	
+	<h1>Posts</h1>
+
+	{{ link_to_route('admin.posts.create', 'Create new Post') }}
+
 	@if ($posts->count())
 		<ul>
 			@foreach ($posts as $post)
