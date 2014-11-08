@@ -4,6 +4,7 @@ class AdminAuthController extends \BaseController {
 
 	public function getLogin()
 	{
+		if ( ! Auth::guest()) return Redirect::route('admin.posts.index');
 		return View::make('admin.auth.login');
 	}
 
