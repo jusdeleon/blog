@@ -23,6 +23,11 @@
 	<footer>
 		<div class="container">
 			&copy; {{ date('Y') }} My Awesome Company
+
+			@if ( ! Auth::guest())
+				{{ link_to_route('admin.logout', 'Logout') }}
+			@endif
+			
 		</div>
 	</footer>
 
