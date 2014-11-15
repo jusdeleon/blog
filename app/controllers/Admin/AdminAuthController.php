@@ -21,6 +21,10 @@ class AdminAuthController extends \BaseController {
 		{
 			return Redirect::intended('admin/posts');
 		}
+		else
+		{
+			return Redirect::back();
+		}
 	}
 
 	public function getLogout()
